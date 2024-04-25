@@ -10,6 +10,7 @@ RUN apt-get install nmap -y
 RUN apt-get install whois -y
 RUN apt-get install nano -y
 RUN apt-get install telnet -y
+RUN apt-get install curl -y
 
 RUN curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 
